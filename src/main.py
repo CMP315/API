@@ -52,7 +52,7 @@ def validate_user(request:Request):
     
 @app.before_request
 def before_request():
-    if not ((request.path.startswith('/login') or request.path.startswith('/users')) and request.method == "POST"):
+    if not request.path.startswith('/ping') and not ((request.path.startswith('/login') or request.path.startswith('/users')) and request.method == "POST"):
         is_validated = validate_user(request)
         if not is_validated: return jsonify({ "status": False, "message": "Invalid Authorization Header. Unauthorized."}), 401
         print("is_validated", is_validated)
