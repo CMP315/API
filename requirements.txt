@@ -4,3 +4,4 @@ pymongo
 bcrypt
 pycryptodome
 requests
+pyjwt
