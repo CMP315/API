@@ -1,7 +1,9 @@
 
 # API
-
 The back-end of the Password Manager.
+
+## View Project Documentation
+[View Project Documentation - Click Here](https://github.com/CMP315/Documentation/tree/main)
 
 ## Run Locally
 1. [Install Python](https://www.python.org/downloads/)
